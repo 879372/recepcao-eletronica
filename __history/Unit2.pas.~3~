@@ -1,0 +1,109 @@
+unit Unit2;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TFrmServico = class(TForm)
+    Label2: TLabel;
+    degrade: TButton;
+    social: TButton;
+    militar: TButton;
+    barba: TButton;
+    sombrancelha: TButton;
+    pezinho: TButton;
+    Label1: TLabel;
+    Label3: TLabel;
+    lblValor: TLabel;
+    pagar: TButton;
+    voltarServ: TButton;
+    procedure voltarServClick(Sender: TObject);
+    procedure pagarClick(Sender: TObject);
+    procedure degradeClick(Sender: TObject);
+    procedure socialClick(Sender: TObject);
+    procedure militarClick(Sender: TObject);
+    procedure barbaClick(Sender: TObject);
+    procedure sombrancelhaClick(Sender: TObject);
+    procedure pezinhoClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmServico: TFrmServico;
+
+implementation
+
+{$R *.dfm}
+
+uses Unit1, Unit3;
+
+
+procedure TFrmServico.barbaClick(Sender: TObject);
+var
+  barba: integer;
+begin
+  barba := 10;
+  lblvalor.Caption := IntToStr(barba);
+
+end;
+
+procedure TFrmServico.degradeClick(Sender: TObject);
+var
+  degrade : integer;
+begin
+  degrade := 15;
+  lblvalor.Caption := IntToStr(degrade);
+end;
+
+procedure TFrmServico.militarClick(Sender: TObject);
+var
+  militar:integer;
+begin
+  militar := 12;
+  lblvalor.Caption := IntToStr(militar);
+end;
+
+procedure TFrmServico.pagarClick(Sender: TObject);
+begin
+ Application.CreateForm(TFrmPagamento, FrmPagamento);
+  FrmPagamento.ShowModal;
+  FrmPagamento.Free;
+end;
+
+procedure TFrmServico.pezinhoClick(Sender: TObject);
+var
+  pezinho : integer;
+begin
+  pezinho := 5;
+  lblvalor.Caption :=  IntToStr(pezinho);
+
+end;
+
+procedure TFrmServico.socialClick(Sender: TObject);
+var
+social : integer;
+begin
+  social := 15;
+  lblvalor.Caption :=  IntToStr(social) + lblvalor.Caption;
+end;
+
+procedure TFrmServico.sombrancelhaClick(Sender: TObject);
+var
+  sombrancelha: integer;
+begin
+  sombrancelha := 5;
+  lblvalor.Caption :=  IntToStr(sombrancelha);
+end;
+
+procedure TFrmServico.voltarServClick(Sender: TObject);
+begin
+ close;
+end;
+
+end.

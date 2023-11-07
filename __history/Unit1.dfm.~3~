@@ -1,0 +1,51 @@
+object FrmInicial: TFrmInicial
+  Left = 0
+  Top = 0
+  Caption = 'Inicio'
+  ClientHeight = 552
+  ClientWidth = 818
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  Position = poDesktopCenter
+  TextHeight = 15
+  object Label1: TLabel
+    Left = 267
+    Top = 238
+    Width = 303
+    Height = 45
+    Caption = 'BARBES BROTHERS'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -33
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 267
+    Top = 168
+    Width = 307
+    Height = 45
+    Caption = 'SEJA BEM-VINDO A'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -33
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object btnIniciar: TButton
+    Left = 284
+    Top = 344
+    Width = 267
+    Height = 65
+    Cursor = crHandPoint
+    Caption = 'CLIQUE PARA INICIAR'
+    TabOrder = 0
+    OnClick = btnIniciarClick
+  end
+end

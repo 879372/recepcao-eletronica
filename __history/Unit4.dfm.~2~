@@ -1,0 +1,28 @@
+object FrmObrigado: TFrmObrigado
+  Left = 0
+  Top = 0
+  Caption = 'Obrigado'
+  ClientHeight = 552
+  ClientWidth = 818
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object Label2: TLabel
+    Left = 163
+    Top = 216
+    Width = 494
+    Height = 90
+    Align = alCustom
+    Caption = 'OBRIGADO PELA PREFER'#202'NCIA '#13#10'           AT'#201' A PR'#211'XIMA!'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -33
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+end

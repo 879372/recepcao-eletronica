@@ -1,0 +1,38 @@
+unit Unit2;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TFrmServico = class(TForm)
+    Label2: TLabel;
+    degrade: TButton;
+    social: TButton;
+    militar: TButton;
+    barba: TButton;
+    sombrancelha: TButton;
+    pezinho: TButton;
+    Label1: TLabel;
+    Label3: TLabel;
+    lblValor: TLabel;
+    pagar: TButton;
+    voltarServ: TButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmServico: TFrmServico;
+
+implementation
+
+{$R *.dfm}
+
+uses Unit1, Unit3;
+
+end.
